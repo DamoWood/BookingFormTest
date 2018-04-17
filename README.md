@@ -17,7 +17,9 @@ The automated tests are written in Java using Selenium and Cucumber. To run them
 ~~~~
 mvn test
 ~~~~
-or open in an IDE and run the RunTest.java class. 
+or open in an IDE and run the RunTest.java class.
+
+Results can be seen in the IDE, terminal or under target/cucumber-reports/index.html
 
 Note:
 Some of the steps are empty. This is because instead of repeating the setup pieces in multiple steps I have pulled them out. This means the step is empty but I have left them in as it makes the Gherkin feature files read much better. 
