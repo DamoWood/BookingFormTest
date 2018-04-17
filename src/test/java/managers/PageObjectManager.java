@@ -6,14 +6,13 @@ import pages.HomePage;
 
 public class PageObjectManager {
 
-    private WebDriver driver;
-    private HomePage homePage;
+    private final HomePage homePage;
 
     public PageObjectManager(WebDriver driver) {
-        this.driver = driver;
+        this.homePage = new HomePage(driver);
     }
 
     public HomePage getHomePage() {
-        return (homePage == null) ? homePage = new HomePage(driver) : homePage;
+        return homePage;
     }
 }
