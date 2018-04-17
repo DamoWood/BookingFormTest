@@ -2,8 +2,8 @@ package managers;
 
 public class TestContext {
 
-    private WebDriverManager webDriverManager;
-    private PageObjectManager pageObjectManager;
+    private final WebDriverManager webDriverManager;
+    private final PageObjectManager pageObjectManager;
 
     public TestContext() {
         webDriverManager = new WebDriverManager();
